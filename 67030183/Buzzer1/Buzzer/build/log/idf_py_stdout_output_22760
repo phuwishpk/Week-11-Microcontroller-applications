@@ -1,0 +1,303 @@
+ets�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15688
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.6 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  4 2025 00:05:49[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2fch ( 41724) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0001a324 vaddr=3ffb0000 size=02170h (  8560) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001c49c vaddr=40080000 size=03b7ch ( 15228) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15d40h ( 89408) map[0m
+[0;32mI (164) esp_image: segment 4: paddr=00035d68 vaddr=40083b7c size=08428h ( 33832) load[0m
+[0;32mI (185) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (185) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (197) cpu_start: Pro cpu up.[0m
+[0;32mI (197) cpu_start: Starting app cpu, entry point is 0x40081110[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (214) cpu_start: Pro cpu start user code[0m
+[0;32mI (214) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (214) cpu_start: Application information:[0m
+[0;32mI (219) cpu_start: Project name:     Buzzer[0m
+[0;32mI (224) cpu_start: App version:      e627c43[0m
+[0;32mI (229) cpu_start: Compile time:     Oct  4 2025 00:05:29[0m
+[0;32mI (235) cpu_start: ELF file SHA256:  8bfd5ae0dd339cb5...[0m
+[0;32mI (241) cpu_start: ESP-IDF:          v5.1.6[0m
+[0;32mI (246) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (251) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (255) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (268) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFB2A18 len 0002D5E8 (181 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (286) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 4008BFA4 len 0001405C (80 KiB): IRAM[0m
+[0;32mI (300) spi_flash: detected chip: generic[0m
+[0;32mI (303) spi_flash: flash io: dio[0m
+[0;33mW (307) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (320) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (329) app_start: Starting scheduler on CPU0[0m
+[0;32mI (334) app_start: Starting scheduler on CPU1[0m
+[0;32mI (334) main_task: Started on CPU0[0m
+[0;32mI (344) main_task: Calling app_main()[0m
+[0;32mI (344) gpio: GPIO[18]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (354) LDR_BUZZER: Start LDR + Buzzer test[0m
+[0;32mI (354) LDR_BUZZER: ADC Raw: 1250, Voltage: 1.17 V[0m
+[0;32mI (364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (1364) LDR_BUZZER: ADC Raw: 561, Voltage: 0.60 V[0m
+[0;32mI (1364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (2364) LDR_BUZZER: ADC Raw: 729, Voltage: 0.74 V[0m
+[0;32mI (2364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (3364) LDR_BUZZER: ADC Raw: 81, Voltage: 0.21 V[0m
+[0;32mI (3364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (4364) LDR_BUZZER: ADC Raw: 169, Voltage: 0.28 V[0m
+[0;32mI (4364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (5364) LDR_BUZZER: ADC Raw: 150, Voltage: 0.26 V[0m
+[0;32mI (5364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (6364) LDR_BUZZER: ADC Raw: 134, Voltage: 0.25 V[0m
+[0;32mI (6364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (7364) LDR_BUZZER: ADC Raw: 669, Voltage: 0.69 V[0m
+[0;32mI (7364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (8364) LDR_BUZZER: ADC Raw: 18, Voltage: 0.16 V[0m
+[0;32mI (8364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (9364) LDR_BUZZER: ADC Raw: 97, Voltage: 0.22 V[0m
+[0;32mI (9364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (10364) LDR_BUZZER: ADC Raw: 646, Voltage: 0.67 V[0m
+[0;32mI (10364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (11364) LDR_BUZZER: ADC Raw: 1002, Voltage: 0.96 V[0m
+[0;32mI (11364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (12364) LDR_BUZZER: ADC Raw: 1015, Voltage: 0.98 V[0m
+[0;32mI (12364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (13364) LDR_BUZZER: ADC Raw: 843, Voltage: 0.83 V[0m
+[0;32mI (13364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (14364) LDR_BUZZER: ADC Raw: 849, Voltage: 0.84 V[0m
+[0;32mI (14364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (15364) LDR_BUZZER: ADC Raw: 238, Voltage: 0.34 V[0m
+[0;32mI (15364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (16364) LDR_BUZZER: ADC Raw: 947, Voltage: 0.92 V[0m
+[0;32mI (16364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (17364) LDR_BUZZER: ADC Raw: 683, Voltage: 0.70 V[0m
+[0;32mI (17364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (18364) LDR_BUZZER: ADC Raw: 471, Voltage: 0.53 V[0m
+[0;32mI (18364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (19364) LDR_BUZZER: ADC Raw: 202, Voltage: 0.31 V[0m
+[0;32mI (19364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (20364) LDR_BUZZER: ADC Raw: 557, Voltage: 0.60 V[0m
+[0;32mI (20364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (21364) LDR_BUZZER: ADC Raw: 769, Voltage: 0.77 V[0m
+[0;32mI (21364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (22364) LDR_BUZZER: ADC Raw: 482, Voltage: 0.54 V[0m
+[0;32mI (22364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (23364) LDR_BUZZER: ADC Raw: 233, Voltage: 0.33 V[0m
+[0;32mI (23364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (24364) LDR_BUZZER: ADC Raw: 830, Voltage: 0.82 V[0m
+[0;32mI (24364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (25364) LDR_BUZZER: ADC Raw: 989, Voltage: 0.95 V[0m
+[0;32mI (25364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (26364) LDR_BUZZER: ADC Raw: 615, Voltage: 0.65 V[0m
+[0;32mI (26364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (27364) LDR_BUZZER: ADC Raw: 653, Voltage: 0.68 V[0m
+[0;32mI (27364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (28364) LDR_BUZZER: ADC Raw: 877, Voltage: 0.86 V[0m
+[0;32mI (28364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (29364) LDR_BUZZER: ADC Raw: 1149, Voltage: 1.09 V[0m
+[0;32mI (29364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (30364) LDR_BUZZER: ADC Raw: 1204, Voltage: 1.13 V[0m
+[0;32mI (30364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (31364) LDR_BUZZER: ADC Raw: 544, Voltage: 0.59 V[0m
+[0;32mI (31364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (32364) LDR_BUZZER: ADC Raw: 128, Voltage: 0.25 V[0m
+[0;32mI (32364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (33364) LDR_BUZZER: ADC Raw: 128, Voltage: 0.25 V[0m
+[0;32mI (33364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (34364) LDR_BUZZER: ADC Raw: 299, Voltage: 0.39 V[0m
+[0;32mI (34364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (35364) LDR_BUZZER: ADC Raw: 479, Voltage: 0.54 V[0m
+[0;32mI (35364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (36364) LDR_BUZZER: ADC Raw: 819, Voltage: 0.81 V[0m
+[0;32mI (36364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (37364) LDR_BUZZER: ADC Raw: 787, Voltage: 0.79 V[0m
+[0;32mI (37364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (38364) LDR_BUZZER: ADC Raw: 1174, Voltage: 1.11 V[0m
+[0;32mI (38364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (39364) LDR_BUZZER: ADC Raw: 464, Voltage: 0.52 V[0m
+[0;32mI (39364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (40364) LDR_BUZZER: ADC Raw: 435, Voltage: 0.50 V[0m
+[0;32mI (40364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (41364) LDR_BUZZER: ADC Raw: 656, Voltage: 0.68 V[0m
+[0;32mI (41364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (42364) LDR_BUZZER: ADC Raw: 427, Voltage: 0.49 V[0m
+[0;32mI (42364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (43364) LDR_BUZZER: ADC Raw: 377, Voltage: 0.45 V[0m
+[0;32mI (43364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (44364) LDR_BUZZER: ADC Raw: 1017, Voltage: 0.98 V[0m
+[0;32mI (44364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (45364) LDR_BUZZER: ADC Raw: 1152, Voltage: 1.09 V[0m
+[0;32mI (45364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (46364) LDR_BUZZER: ADC Raw: 1439, Voltage: 1.32 V[0m
+[0;32mI (46364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (47364) LDR_BUZZER: ADC Raw: 1357, Voltage: 1.26 V[0m
+[0;32mI (47364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (48364) LDR_BUZZER: ADC Raw: 1307, Voltage: 1.22 V[0m
+[0;32mI (48364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (49364) LDR_BUZZER: ADC Raw: 1327, Voltage: 1.23 V[0m
+[0;32mI (49364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (50364) LDR_BUZZER: ADC Raw: 1109, Voltage: 1.05 V[0m
+[0;32mI (50364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (51364) LDR_BUZZER: ADC Raw: 931, Voltage: 0.91 V[0m
+[0;32mI (51364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (52364) LDR_BUZZER: ADC Raw: 62, Voltage: 0.19 V[0m
+[0;32mI (52364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (53364) LDR_BUZZER: ADC Raw: 78, Voltage: 0.21 V[0m
+[0;32mI (53364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (54364) LDR_BUZZER: ADC Raw: 1226, Voltage: 1.15 V[0m
+[0;32mI (54364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (55364) LDR_BUZZER: ADC Raw: 1414, Voltage: 1.30 V[0m
+[0;32mI (55364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (56364) LDR_BUZZER: ADC Raw: 178, Voltage: 0.29 V[0m
+[0;32mI (56364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (57364) LDR_BUZZER: ADC Raw: 29, Voltage: 0.17 V[0m
+[0;32mI (57364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (58364) LDR_BUZZER: ADC Raw: 27, Voltage: 0.16 V[0m
+[0;32mI (58364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (59364) LDR_BUZZER: ADC Raw: 16, Voltage: 0.16 V[0m
+[0;32mI (59364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (60364) LDR_BUZZER: ADC Raw: 21, Voltage: 0.16 V[0m
+[0;32mI (60364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (61364) LDR_BUZZER: ADC Raw: 32, Voltage: 0.17 V[0m
+[0;32mI (61364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (62364) LDR_BUZZER: ADC Raw: 43, Voltage: 0.18 V[0m
+[0;32mI (62364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (63364) LDR_BUZZER: ADC Raw: 45, Voltage: 0.18 V[0m
+[0;32mI (63364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (64364) LDR_BUZZER: ADC Raw: 64, Voltage: 0.19 V[0m
+[0;32mI (64364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (65364) LDR_BUZZER: ADC Raw: 66, Voltage: 0.20 V[0m
+[0;32mI (65364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (66364) LDR_BUZZER: ADC Raw: 61, Voltage: 0.19 V[0m
+[0;32mI (66364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (67364) LDR_BUZZER: ADC Raw: 95, Voltage: 0.22 V[0m
+[0;32mI (67364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (68364) LDR_BUZZER: ADC Raw: 99, Voltage: 0.22 V[0m
+[0;32mI (68364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (69364) LDR_BUZZER: ADC Raw: 98, Voltage: 0.22 V[0m
+[0;32mI (69364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (70364) LDR_BUZZER: ADC Raw: 102, Voltage: 0.23 V[0m
+[0;32mI (70364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (71364) LDR_BUZZER: ADC Raw: 93, Voltage: 0.22 V[0m
+[0;32mI (71364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (72364) LDR_BUZZER: ADC Raw: 101, Voltage: 0.22 V[0m
+[0;32mI (72364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (73364) LDR_BUZZER: ADC Raw: 53, Voltage: 0.19 V[0m
+[0;32mI (73364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (74364) LDR_BUZZER: ADC Raw: 47, Voltage: 0.18 V[0m
+[0;32mI (74364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (75364) LDR_BUZZER: ADC Raw: 822, Voltage: 0.82 V[0m
+[0;32mI (75364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (76364) LDR_BUZZER: ADC Raw: 884, Voltage: 0.87 V[0m
+[0;32mI (76364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (77364) LDR_BUZZER: ADC Raw: 1049, Voltage: 1.00 V[0m
+[0;32mI (77364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (78364) LDR_BUZZER: ADC Raw: 965, Voltage: 0.93 V[0m
+[0;32mI (78364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (79364) LDR_BUZZER: ADC Raw: 911, Voltage: 0.89 V[0m
+[0;32mI (79364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (80364) LDR_BUZZER: ADC Raw: 107, Voltage: 0.23 V[0m
+[0;32mI (80364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (81364) LDR_BUZZER: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (81364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (82364) LDR_BUZZER: ADC Raw: 347, Voltage: 0.43 V[0m
+[0;32mI (82364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (83364) LDR_BUZZER: ADC Raw: 429, Voltage: 0.49 V[0m
+[0;32mI (83364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (84364) LDR_BUZZER: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (84364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (85364) LDR_BUZZER: ADC Raw: 1156, Voltage: 1.09 V[0m
+[0;32mI (85364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (86364) LDR_BUZZER: ADC Raw: 608, Voltage: 0.64 V[0m
+[0;32mI (86364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (87364) LDR_BUZZER: ADC Raw: 2620, Voltage: 2.29 V[0m
+[0;32mI (87364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (88364) LDR_BUZZER: ADC Raw: 1, Voltage: 0.14 V[0m
+[0;32mI (88364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (89364) LDR_BUZZER: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (89364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (90364) LDR_BUZZER: ADC Raw: 470, Voltage: 0.53 V[0m
+[0;32mI (90364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (91364) LDR_BUZZER: ADC Raw: 731, Voltage: 0.74 V[0m
+[0;32mI (91364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (92364) LDR_BUZZER: ADC Raw: 343, Voltage: 0.42 V[0m
+[0;32mI (92364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (93364) LDR_BUZZER: ADC Raw: 211, Voltage: 0.31 V[0m
+[0;32mI (93364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (94364) LDR_BUZZER: ADC Raw: 251, Voltage: 0.35 V[0m
+[0;32mI (94364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (95364) LDR_BUZZER: ADC Raw: 361, Voltage: 0.44 V[0m
+[0;32mI (95364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (96364) LDR_BUZZER: ADC Raw: 705, Voltage: 0.72 V[0m
+[0;32mI (96364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (97364) LDR_BUZZER: ADC Raw: 701, Voltage: 0.72 V[0m
+[0;32mI (97364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (98364) LDR_BUZZER: ADC Raw: 1181, Voltage: 1.11 V[0m
+[0;32mI (98364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (99364) LDR_BUZZER: ADC Raw: 1077, Voltage: 1.03 V[0m
+[0;32mI (99364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (100364) LDR_BUZZER: ADC Raw: 437, Voltage: 0.50 V[0m
+[0;32mI (100364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (101364) LDR_BUZZER: ADC Raw: 336, Voltage: 0.42 V[0m
+[0;32mI (101364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (102364) LDR_BUZZER: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (102364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (103364) LDR_BUZZER: ADC Raw: 219, Voltage: 0.32 V[0m
+[0;32mI (103364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (104364) LDR_BUZZER: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (104364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (105364) LDR_BUZZER: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (105364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (106364) LDR_BUZZER: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (106364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (107364) LDR_BUZZER: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (107364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (108364) LDR_BUZZER: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (108364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (109364) LDR_BUZZER: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (109364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (110364) LDR_BUZZER: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (110364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (111364) LDR_BUZZER: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (111364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (112364) LDR_BUZZER: ADC Raw: 176, Voltage: 0.29 V[0m
+[0;32mI (112364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (113364) LDR_BUZZER: ADC Raw: 717, Voltage: 0.73 V[0m
+[0;32mI (113364) LDR_BUZZER: Buzzer ON (Dark detected!)[0m
+[0;32mI (114364) LDR_BUZZER: ADC Raw: 1301, Voltage: 1.21 V[0m
+[0;32mI (114364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (115364) LDR_BUZZER: ADC Raw: 1830, Voltage: 1.64 V[0m
+[0;32mI (115364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (116364) LDR_BUZZER: ADC Raw: 2187, Voltage: 1.94 V[0m
+[0;32mI (116364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (117364) LDR_BUZZER: ADC Raw: 2553, Voltage: 2.24 V[0m
+[0;32mI (117364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (118364) LDR_BUZZER: ADC Raw: 2617, Voltage: 2.29 V[0m
+[0;32mI (118364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
+[0;32mI (119364) LDR_BUZZER: ADC Raw: 2667, Voltage: 2.33 V[0m
+[0;32mI (119364) LDR_BUZZER: Buzzer OFF (Bright enough)[0m
