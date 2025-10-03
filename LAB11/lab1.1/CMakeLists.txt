@@ -1,2 +1,4 @@
-idf_component_register(SRCS "lab1.1.c" "main.c"
-                    INCLUDE_DIRS ".")
+cmake_minimum_required(VERSION 3.5)
+
+include($ENV{IDF_PATH}/tools/cmake/project.cmake)
+project(lab1.1)
