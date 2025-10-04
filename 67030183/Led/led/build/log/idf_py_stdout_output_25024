@@ -1,0 +1,2417 @@
+ets Ju�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15688
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (29) boot: ESP-IDF v5.1.6 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time Oct  4 2025 00:41:41[0m
+[0;32mI (29) boot: Multicore bootloader[0m
+[0;32mI (34) boot: chip revision: v3.1[0m
+[0;32mI (37) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (42) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (47) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (90) boot: End of partition table[0m
+[0;32mI (94) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2f4h ( 41716) map[0m
+[0;32mI (118) esp_image: segment 1: paddr=0001a31c vaddr=3ffb0000 size=02170h (  8560) load[0m
+[0;32mI (121) esp_image: segment 2: paddr=0001c494 vaddr=40080000 size=03b84h ( 15236) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15d40h ( 89408) map[0m
+[0;32mI (164) esp_image: segment 4: paddr=00035d68 vaddr=40083b84 size=08420h ( 33824) load[0m
+[0;32mI (185) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (185) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (197) cpu_start: Pro cpu up.[0m
+[0;32mI (197) cpu_start: Starting app cpu, entry point is 0x40081110[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (214) cpu_start: Pro cpu start user code[0m
+[0;32mI (214) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (214) cpu_start: Application information:[0m
+[0;32mI (219) cpu_start: Project name:     led[0m
+[0;32mI (224) cpu_start: App version:      ef991a2-dirty[0m
+[0;32mI (229) cpu_start: Compile time:     Oct  4 2025 00:40:43[0m
+[0;32mI (235) cpu_start: ELF file SHA256:  70bfc82032882f9a...[0m
+[0;32mI (241) cpu_start: ESP-IDF:          v5.1.6[0m
+[0;32mI (246) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (251) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (256) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (261) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (268) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (274) heap_init: At 3FFB2A18 len 0002D5E8 (181 KiB): DRAM[0m
+[0;32mI (280) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (286) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (293) heap_init: At 4008BFA4 len 0001405C (80 KiB): IRAM[0m
+[0;32mI (300) spi_flash: detected chip: generic[0m
+[0;32mI (304) spi_flash: flash io: dio[0m
+[0;33mW (307) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (321) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (329) app_start: Starting scheduler on CPU0[0m
+[0;32mI (334) app_start: Starting scheduler on CPU1[0m
+[0;32mI (334) main_task: Started on CPU0[0m
+[0;32mI (344) main_task: Calling app_main()[0m
+[0;32mI (344) gpio: GPIO[4]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (354) LDR_LED: Start LDR + LED test[0m
+[0;32mI (354) LDR_LED: ADC Raw: 2402, Voltage: 2.11 V[0m
+[0;32mI (364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (1364) LDR_LED: ADC Raw: 1625, Voltage: 1.48 V[0m
+[0;32mI (1364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (2364) LDR_LED: ADC Raw: 1496, Voltage: 1.37 V[0m
+[0;32mI (2364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (3364) LDR_LED: ADC Raw: 1838, Voltage: 1.65 V[0m
+[0;32mI (3364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (4364) LDR_LED: ADC Raw: 1817, Voltage: 1.63 V[0m
+[0;32mI (4364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (5364) LDR_LED: ADC Raw: 1808, Voltage: 1.63 V[0m
+[0;32mI (5364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (6364) LDR_LED: ADC Raw: 1883, Voltage: 1.69 V[0m
+[0;32mI (6364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (7364) LDR_LED: ADC Raw: 1938, Voltage: 1.73 V[0m
+[0;32mI (7364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (8364) LDR_LED: ADC Raw: 2038, Voltage: 1.82 V[0m
+[0;32mI (8364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (9364) LDR_LED: ADC Raw: 1890, Voltage: 1.69 V[0m
+[0;32mI (9364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (10364) LDR_LED: ADC Raw: 2165, Voltage: 1.92 V[0m
+[0;32mI (10364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (11364) LDR_LED: ADC Raw: 2394, Voltage: 2.11 V[0m
+[0;32mI (11364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (12364) LDR_LED: ADC Raw: 2467, Voltage: 2.17 V[0m
+[0;32mI (12364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (13364) LDR_LED: ADC Raw: 2587, Voltage: 2.27 V[0m
+[0;32mI (13364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (14364) LDR_LED: ADC Raw: 2641, Voltage: 2.31 V[0m
+[0;32mI (14364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (15364) LDR_LED: ADC Raw: 2633, Voltage: 2.30 V[0m
+[0;32mI (15364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (16364) LDR_LED: ADC Raw: 2194, Voltage: 1.94 V[0m
+[0;32mI (16364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (17364) LDR_LED: ADC Raw: 2870, Voltage: 2.50 V[0m
+[0;32mI (17364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (18364) LDR_LED: ADC Raw: 3087, Voltage: 2.64 V[0m
+[0;32mI (18364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (19364) LDR_LED: ADC Raw: 2841, Voltage: 2.47 V[0m
+[0;32mI (19364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (20364) LDR_LED: ADC Raw: 2847, Voltage: 2.48 V[0m
+[0;32mI (20364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (21364) LDR_LED: ADC Raw: 2854, Voltage: 2.48 V[0m
+[0;32mI (21364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (22364) LDR_LED: ADC Raw: 2816, Voltage: 2.45 V[0m
+[0;32mI (22364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (23364) LDR_LED: ADC Raw: 2802, Voltage: 2.44 V[0m
+[0;32mI (23364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (24364) LDR_LED: ADC Raw: 2775, Voltage: 2.42 V[0m
+[0;32mI (24364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (25364) LDR_LED: ADC Raw: 2734, Voltage: 2.39 V[0m
+[0;32mI (25364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (26364) LDR_LED: ADC Raw: 864, Voltage: 0.85 V[0m
+[0;32mI (26364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (27364) LDR_LED: ADC Raw: 2672, Voltage: 2.34 V[0m
+[0;32mI (27364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (28364) LDR_LED: ADC Raw: 509, Voltage: 0.56 V[0m
+[0;32mI (28364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (29364) LDR_LED: ADC Raw: 2855, Voltage: 2.49 V[0m
+[0;32mI (29364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (30364) LDR_LED: ADC Raw: 2843, Voltage: 2.48 V[0m
+[0;32mI (30364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (31364) LDR_LED: ADC Raw: 2864, Voltage: 2.49 V[0m
+[0;32mI (31364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (32364) LDR_LED: ADC Raw: 2799, Voltage: 2.44 V[0m
+[0;32mI (32364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (33364) LDR_LED: ADC Raw: 2778, Voltage: 2.42 V[0m
+[0;32mI (33364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (34364) LDR_LED: ADC Raw: 2745, Voltage: 2.40 V[0m
+[0;32mI (34364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (35364) LDR_LED: ADC Raw: 2767, Voltage: 2.41 V[0m
+[0;32mI (35364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (36364) LDR_LED: ADC Raw: 1806, Voltage: 1.62 V[0m
+[0;32mI (36364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (37364) LDR_LED: ADC Raw: 1648, Voltage: 1.50 V[0m
+[0;32mI (37364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (38364) LDR_LED: ADC Raw: 1843, Voltage: 1.65 V[0m
+[0;32mI (38364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (39364) LDR_LED: ADC Raw: 1465, Voltage: 1.35 V[0m
+[0;32mI (39364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (40364) LDR_LED: ADC Raw: 1313, Voltage: 1.22 V[0m
+[0;32mI (40364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (41364) LDR_LED: ADC Raw: 2897, Voltage: 2.52 V[0m
+[0;32mI (41364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (42364) LDR_LED: ADC Raw: 2704, Voltage: 2.36 V[0m
+[0;32mI (42364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (43364) LDR_LED: ADC Raw: 2710, Voltage: 2.37 V[0m
+[0;32mI (43364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (44364) LDR_LED: ADC Raw: 2729, Voltage: 2.38 V[0m
+[0;32mI (44364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (45364) LDR_LED: ADC Raw: 2816, Voltage: 2.45 V[0m
+[0;32mI (45364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (46364) LDR_LED: ADC Raw: 2835, Voltage: 2.47 V[0m
+[0;32mI (46364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (47364) LDR_LED: ADC Raw: 2859, Voltage: 2.49 V[0m
+[0;32mI (47364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (48364) LDR_LED: ADC Raw: 2849, Voltage: 2.48 V[0m
+[0;32mI (48364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (49364) LDR_LED: ADC Raw: 2821, Voltage: 2.46 V[0m
+[0;32mI (49364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (50364) LDR_LED: ADC Raw: 2811, Voltage: 2.45 V[0m
+[0;32mI (50364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (51364) LDR_LED: ADC Raw: 2795, Voltage: 2.44 V[0m
+[0;32mI (51364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (52364) LDR_LED: ADC Raw: 2703, Voltage: 2.36 V[0m
+[0;32mI (52364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (53364) LDR_LED: ADC Raw: 2709, Voltage: 2.37 V[0m
+[0;32mI (53364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (54364) LDR_LED: ADC Raw: 2738, Voltage: 2.39 V[0m
+[0;32mI (54364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (55364) LDR_LED: ADC Raw: 2064, Voltage: 1.84 V[0m
+[0;32mI (55364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (56364) LDR_LED: ADC Raw: 1556, Voltage: 1.42 V[0m
+[0;32mI (56364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (57364) LDR_LED: ADC Raw: 1055, Voltage: 1.01 V[0m
+[0;32mI (57364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (58364) LDR_LED: ADC Raw: 602, Voltage: 0.64 V[0m
+[0;32mI (58364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (59364) LDR_LED: ADC Raw: 299, Voltage: 0.39 V[0m
+[0;32mI (59364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (60364) LDR_LED: ADC Raw: 184, Voltage: 0.29 V[0m
+[0;32mI (60364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (61364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (61364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (62364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (62364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (63364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (63364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (64364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (64364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (65364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (65364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (66364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (66364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (67364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (67364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (68364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (68364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (69364) LDR_LED: ADC Raw: 81, Voltage: 0.21 V[0m
+[0;32mI (69364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (70364) LDR_LED: ADC Raw: 210, Voltage: 0.31 V[0m
+[0;32mI (70364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (71364) LDR_LED: ADC Raw: 694, Voltage: 0.71 V[0m
+[0;32mI (71364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (72364) LDR_LED: ADC Raw: 750, Voltage: 0.76 V[0m
+[0;32mI (72364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (73364) LDR_LED: ADC Raw: 1448, Voltage: 1.33 V[0m
+[0;32mI (73364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (74364) LDR_LED: ADC Raw: 2544, Voltage: 2.23 V[0m
+[0;32mI (74364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (75364) LDR_LED: ADC Raw: 2762, Voltage: 2.41 V[0m
+[0;32mI (75364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (76364) LDR_LED: ADC Raw: 2829, Voltage: 2.46 V[0m
+[0;32mI (76364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (77364) LDR_LED: ADC Raw: 2622, Voltage: 2.30 V[0m
+[0;32mI (77364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (78364) LDR_LED: ADC Raw: 2713, Voltage: 2.37 V[0m
+[0;32mI (78364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (79364) LDR_LED: ADC Raw: 2928, Voltage: 2.54 V[0m
+[0;32mI (79364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (80364) LDR_LED: ADC Raw: 2899, Voltage: 2.52 V[0m
+[0;32mI (80364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (81364) LDR_LED: ADC Raw: 2837, Voltage: 2.47 V[0m
+[0;32mI (81364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (82364) LDR_LED: ADC Raw: 2407, Voltage: 2.12 V[0m
+[0;32mI (82364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (83364) LDR_LED: ADC Raw: 2617, Voltage: 2.29 V[0m
+[0;32mI (83364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (84364) LDR_LED: ADC Raw: 1328, Voltage: 1.23 V[0m
+[0;32mI (84364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (85364) LDR_LED: ADC Raw: 483, Voltage: 0.54 V[0m
+[0;32mI (85364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (86364) LDR_LED: ADC Raw: 370, Voltage: 0.45 V[0m
+[0;32mI (86364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (87364) LDR_LED: ADC Raw: 110, Voltage: 0.23 V[0m
+[0;32mI (87364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (88364) LDR_LED: ADC Raw: 87, Voltage: 0.21 V[0m
+[0;32mI (88364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (89364) LDR_LED: ADC Raw: 272, Voltage: 0.37 V[0m
+[0;32mI (89364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (90364) LDR_LED: ADC Raw: 290, Voltage: 0.38 V[0m
+[0;32mI (90364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (91364) LDR_LED: ADC Raw: 342, Voltage: 0.42 V[0m
+[0;32mI (91364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (92364) LDR_LED: ADC Raw: 112, Voltage: 0.23 V[0m
+[0;32mI (92364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (93364) LDR_LED: ADC Raw: 67, Voltage: 0.20 V[0m
+[0;32mI (93364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (94364) LDR_LED: ADC Raw: 257, Voltage: 0.35 V[0m
+[0;32mI (94364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (95364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (95364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (96364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (96364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (97364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (97364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (98364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (98364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (99364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (99364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (100364) LDR_LED: ADC Raw: 249, Voltage: 0.35 V[0m
+[0;32mI (100364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (101364) LDR_LED: ADC Raw: 318, Voltage: 0.40 V[0m
+[0;32mI (101364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (102364) LDR_LED: ADC Raw: 361, Voltage: 0.44 V[0m
+[0;32mI (102364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (103364) LDR_LED: ADC Raw: 223, Voltage: 0.32 V[0m
+[0;32mI (103364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (104364) LDR_LED: ADC Raw: 54, Voltage: 0.19 V[0m
+[0;32mI (104364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (105364) LDR_LED: ADC Raw: 86, Voltage: 0.21 V[0m
+[0;32mI (105364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (106364) LDR_LED: ADC Raw: 174, Voltage: 0.28 V[0m
+[0;32mI (106364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (107364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (107364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (108364) LDR_LED: ADC Raw: 195, Voltage: 0.30 V[0m
+[0;32mI (108364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (109364) LDR_LED: ADC Raw: 191, Voltage: 0.30 V[0m
+[0;32mI (109364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (110364) LDR_LED: ADC Raw: 219, Voltage: 0.32 V[0m
+[0;32mI (110364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (111364) LDR_LED: ADC Raw: 219, Voltage: 0.32 V[0m
+[0;32mI (111364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (112364) LDR_LED: ADC Raw: 9, Voltage: 0.15 V[0m
+[0;32mI (112364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (113364) LDR_LED: ADC Raw: 97, Voltage: 0.22 V[0m
+[0;32mI (113364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (114364) LDR_LED: ADC Raw: 165, Voltage: 0.28 V[0m
+[0;32mI (114364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (115364) LDR_LED: ADC Raw: 208, Voltage: 0.31 V[0m
+[0;32mI (115364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (116364) LDR_LED: ADC Raw: 81, Voltage: 0.21 V[0m
+[0;32mI (116364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (117364) LDR_LED: ADC Raw: 1043, Voltage: 1.00 V[0m
+[0;32mI (117364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (118364) LDR_LED: ADC Raw: 30, Voltage: 0.17 V[0m
+[0;32mI (118364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (119364) LDR_LED: ADC Raw: 370, Voltage: 0.45 V[0m
+[0;32mI (119364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (120364) LDR_LED: ADC Raw: 545, Voltage: 0.59 V[0m
+[0;32mI (120364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (121364) LDR_LED: ADC Raw: 879, Voltage: 0.86 V[0m
+[0;32mI (121364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (122364) LDR_LED: ADC Raw: 1905, Voltage: 1.71 V[0m
+[0;32mI (122364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (123364) LDR_LED: ADC Raw: 2316, Voltage: 2.04 V[0m
+[0;32mI (123364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (124364) LDR_LED: ADC Raw: 2423, Voltage: 2.13 V[0m
+[0;32mI (124364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (125364) LDR_LED: ADC Raw: 2692, Voltage: 2.35 V[0m
+[0;32mI (125364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (126364) LDR_LED: ADC Raw: 2811, Voltage: 2.45 V[0m
+[0;32mI (126364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (127364) LDR_LED: ADC Raw: 2874, Voltage: 2.50 V[0m
+[0;32mI (127364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (128364) LDR_LED: ADC Raw: 2891, Voltage: 2.51 V[0m
+[0;32mI (128364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (129364) LDR_LED: ADC Raw: 2810, Voltage: 2.45 V[0m
+[0;32mI (129364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (130364) LDR_LED: ADC Raw: 2712, Voltage: 2.37 V[0m
+[0;32mI (130364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (131364) LDR_LED: ADC Raw: 2269, Voltage: 2.01 V[0m
+[0;32mI (131364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (132364) LDR_LED: ADC Raw: 1474, Voltage: 1.35 V[0m
+[0;32mI (132364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (133364) LDR_LED: ADC Raw: 891, Voltage: 0.87 V[0m
+[0;32mI (133364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (134364) LDR_LED: ADC Raw: 477, Voltage: 0.53 V[0m
+[0;32mI (134364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (135364) LDR_LED: ADC Raw: 73, Voltage: 0.20 V[0m
+[0;32mI (135364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (136364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (136364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (137364) LDR_LED: ADC Raw: 16, Voltage: 0.16 V[0m
+[0;32mI (137364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (138364) LDR_LED: ADC Raw: 231, Voltage: 0.33 V[0m
+[0;32mI (138364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (139364) LDR_LED: ADC Raw: 198, Voltage: 0.31 V[0m
+[0;32mI (139364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (140364) LDR_LED: ADC Raw: 131, Voltage: 0.25 V[0m
+[0;32mI (140364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (141364) LDR_LED: ADC Raw: 143, Voltage: 0.26 V[0m
+[0;32mI (141364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (142364) LDR_LED: ADC Raw: 74, Voltage: 0.20 V[0m
+[0;32mI (142364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (143364) LDR_LED: ADC Raw: 81, Voltage: 0.21 V[0m
+[0;32mI (143364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (144364) LDR_LED: ADC Raw: 59, Voltage: 0.19 V[0m
+[0;32mI (144364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (145364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (145364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (146364) LDR_LED: ADC Raw: 1037, Voltage: 0.99 V[0m
+[0;32mI (146364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (147364) LDR_LED: ADC Raw: 2334, Voltage: 2.06 V[0m
+[0;32mI (147364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (148364) LDR_LED: ADC Raw: 2597, Voltage: 2.27 V[0m
+[0;32mI (148364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (149364) LDR_LED: ADC Raw: 2821, Voltage: 2.46 V[0m
+[0;32mI (149364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (150364) LDR_LED: ADC Raw: 2774, Voltage: 2.42 V[0m
+[0;32mI (150364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (151364) LDR_LED: ADC Raw: 2795, Voltage: 2.44 V[0m
+[0;32mI (151364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (152364) LDR_LED: ADC Raw: 2778, Voltage: 2.42 V[0m
+[0;32mI (152364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (153364) LDR_LED: ADC Raw: 2887, Voltage: 2.51 V[0m
+[0;32mI (153364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (154364) LDR_LED: ADC Raw: 2800, Voltage: 2.44 V[0m
+[0;32mI (154364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (155364) LDR_LED: ADC Raw: 1982, Voltage: 1.77 V[0m
+[0;32mI (155364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (156364) LDR_LED: ADC Raw: 1405, Voltage: 1.30 V[0m
+[0;32mI (156364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (157364) LDR_LED: ADC Raw: 2121, Voltage: 1.88 V[0m
+[0;32mI (157364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (158364) LDR_LED: ADC Raw: 1256, Voltage: 1.17 V[0m
+[0;32mI (158364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (159364) LDR_LED: ADC Raw: 276, Voltage: 0.37 V[0m
+[0;32mI (159364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (160364) LDR_LED: ADC Raw: 259, Voltage: 0.35 V[0m
+[0;32mI (160364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (161364) LDR_LED: ADC Raw: 267, Voltage: 0.36 V[0m
+[0;32mI (161364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (162364) LDR_LED: ADC Raw: 249, Voltage: 0.35 V[0m
+[0;32mI (162364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (163364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (163364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (164364) LDR_LED: ADC Raw: 133, Voltage: 0.25 V[0m
+[0;32mI (164364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (165364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (165364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (166364) LDR_LED: ADC Raw: 145, Voltage: 0.26 V[0m
+[0;32mI (166364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (167364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (167364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (168364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (168364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (169364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (169364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (170364) LDR_LED: ADC Raw: 286, Voltage: 0.38 V[0m
+[0;32mI (170364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (171364) LDR_LED: ADC Raw: 194, Voltage: 0.30 V[0m
+[0;32mI (171364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (172364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (172364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (173364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (173364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (174364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (174364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (175364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (175364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (176364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (176364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (177364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (177364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (178364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (178364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (179364) LDR_LED: ADC Raw: 628, Voltage: 0.66 V[0m
+[0;32mI (179364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (180364) LDR_LED: ADC Raw: 154, Voltage: 0.27 V[0m
+[0;32mI (180364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (181364) LDR_LED: ADC Raw: 666, Voltage: 0.69 V[0m
+[0;32mI (181364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (182364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (182364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (183364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (183364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (184364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (184364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (185364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (185364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (186364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (186364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (187364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (187364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (188364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (188364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (189364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (189364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (190364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (190364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (191364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (191364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (192364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (192364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (193364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (193364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (194364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (194364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (195364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (195364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (196364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (196364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (197364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (197364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (198364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (198364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (199364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (199364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (200364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (200364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (201364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (201364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (202364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (202364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (203364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (203364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (204364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (204364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (205364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (205364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (206364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (206364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (207364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (207364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (208364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (208364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (209364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (209364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (210364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (210364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (211364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (211364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (212364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (212364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (213364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (213364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (214364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (214364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (215364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (215364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (216364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (216364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (217364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (217364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (218364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (218364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (219364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (219364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (220364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (220364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (221364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (221364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (222364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (222364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (223364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (223364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (224364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (224364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (225364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (225364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (226364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (226364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (227364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (227364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (228364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (228364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (229364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (229364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (230364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (230364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (231364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (231364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (232364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (232364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (233364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (233364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (234364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (234364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (235364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (235364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (236364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (236364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (237364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (237364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (238364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (238364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (239364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (239364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (240364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (240364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (241364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (241364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (242364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (242364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (243364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (243364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (244364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (244364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (245364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (245364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (246364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (246364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (247364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (247364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (248364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (248364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (249364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (249364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (250364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (250364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (251364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (251364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (252364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (252364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (253364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (253364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (254364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (254364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (255364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (255364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (256364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (256364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (257364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (257364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (258364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (258364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (259364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (259364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (260364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (260364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (261364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (261364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (262364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (262364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (263364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (263364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (264364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (264364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (265364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (265364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (266364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (266364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (267364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (267364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (268364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (268364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (269364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (269364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (270364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (270364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (271364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (271364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (272364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (272364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (273364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (273364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (274364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (274364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (275364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (275364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (276364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (276364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (277364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (277364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (278364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (278364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (279364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (279364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (280364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (280364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (281364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (281364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (282364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (282364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (283364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (283364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (284364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (284364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (285364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (285364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (286364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (286364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (287364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (287364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (288364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (288364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (289364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (289364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (290364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (290364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (291364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (291364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (292364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (292364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (293364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (293364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (294364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (294364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (295364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (295364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (296364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (296364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (297364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (297364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (298364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (298364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (299364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (299364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (300364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (300364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (301364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (301364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (302364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (302364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (303364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (303364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (304364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (304364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (305364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (305364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (306364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (306364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (307364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (307364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (308364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (308364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (309364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (309364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (310364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (310364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (311364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (311364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (312364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (312364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (313364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (313364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (314364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (314364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (315364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (315364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (316364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (316364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (317364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (317364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (318364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (318364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (319364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (319364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (320364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (320364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (321364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (321364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (322364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (322364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (323364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (323364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (324364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (324364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (325364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (325364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (326364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (326364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (327364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (327364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (328364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (328364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (329364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (329364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (330364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (330364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (331364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (331364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (332364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (332364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (333364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (333364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (334364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (334364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (335364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (335364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (336364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (336364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (337364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (337364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (338364) LDR_LED: ADC Raw: 628, Voltage: 0.66 V[0m
+[0;32mI (338364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (339364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (339364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (340364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (340364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (341364) LDR_LED: ADC Raw: 37, Voltage: 0.17 V[0m
+[0;32mI (341364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (342364) LDR_LED: ADC Raw: 435, Voltage: 0.50 V[0m
+[0;32mI (342364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (343364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (343364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (344364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (344364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (345364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (345364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (346364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (346364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (347364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (347364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (348364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (348364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (349364) LDR_LED: ADC Raw: 242, Voltage: 0.34 V[0m
+[0;32mI (349364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (350364) LDR_LED: ADC Raw: 491, Voltage: 0.55 V[0m
+[0;32mI (350364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (351364) LDR_LED: ADC Raw: 94, Voltage: 0.22 V[0m
+[0;32mI (351364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (352364) LDR_LED: ADC Raw: 897, Voltage: 0.88 V[0m
+[0;32mI (352364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (353364) LDR_LED: ADC Raw: 608, Voltage: 0.64 V[0m
+[0;32mI (353364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (354364) LDR_LED: ADC Raw: 842, Voltage: 0.83 V[0m
+[0;32mI (354364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (355364) LDR_LED: ADC Raw: 1282, Voltage: 1.20 V[0m
+[0;32mI (355364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (356364) LDR_LED: ADC Raw: 1651, Voltage: 1.50 V[0m
+[0;32mI (356364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (357364) LDR_LED: ADC Raw: 1937, Voltage: 1.73 V[0m
+[0;32mI (357364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (358364) LDR_LED: ADC Raw: 2410, Voltage: 2.12 V[0m
+[0;32mI (358364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (359364) LDR_LED: ADC Raw: 2070, Voltage: 1.84 V[0m
+[0;32mI (359364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (360364) LDR_LED: ADC Raw: 1600, Voltage: 1.46 V[0m
+[0;32mI (360364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (361364) LDR_LED: ADC Raw: 1031, Voltage: 0.99 V[0m
+[0;32mI (361364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (362364) LDR_LED: ADC Raw: 803, Voltage: 0.80 V[0m
+[0;32mI (362364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (363364) LDR_LED: ADC Raw: 264, Voltage: 0.36 V[0m
+[0;32mI (363364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (364364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (364364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (365364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (365364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (366364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (366364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (367364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (367364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (368364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (368364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (369364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (369364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (370364) LDR_LED: ADC Raw: 32, Voltage: 0.17 V[0m
+[0;32mI (370364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (371364) LDR_LED: ADC Raw: 0, Voltage: 0.14 V[0m
+[0;32mI (371364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (372364) LDR_LED: ADC Raw: 533, Voltage: 0.58 V[0m
+[0;32mI (372364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (373364) LDR_LED: ADC Raw: 439, Voltage: 0.50 V[0m
+[0;32mI (373364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (374364) LDR_LED: ADC Raw: 225, Voltage: 0.33 V[0m
+[0;32mI (374364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (375364) LDR_LED: ADC Raw: 608, Voltage: 0.64 V[0m
+[0;32mI (375364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (376364) LDR_LED: ADC Raw: 1670, Voltage: 1.51 V[0m
+[0;32mI (376364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (377364) LDR_LED: ADC Raw: 2796, Voltage: 2.44 V[0m
+[0;32mI (377364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (378364) LDR_LED: ADC Raw: 2745, Voltage: 2.40 V[0m
+[0;32mI (378364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (379364) LDR_LED: ADC Raw: 2767, Voltage: 2.41 V[0m
+[0;32mI (379364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (380364) LDR_LED: ADC Raw: 2883, Voltage: 2.51 V[0m
+[0;32mI (380364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (381364) LDR_LED: ADC Raw: 2842, Voltage: 2.47 V[0m
+[0;32mI (381364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (382364) LDR_LED: ADC Raw: 2821, Voltage: 2.46 V[0m
+[0;32mI (382364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (383364) LDR_LED: ADC Raw: 2864, Voltage: 2.49 V[0m
+[0;32mI (383364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (384364) LDR_LED: ADC Raw: 2713, Voltage: 2.37 V[0m
+[0;32mI (384364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (385364) LDR_LED: ADC Raw: 2559, Voltage: 2.24 V[0m
+[0;32mI (385364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (386364) LDR_LED: ADC Raw: 2559, Voltage: 2.24 V[0m
+[0;32mI (386364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (387364) LDR_LED: ADC Raw: 2322, Voltage: 2.05 V[0m
+[0;32mI (387364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (388364) LDR_LED: ADC Raw: 1856, Voltage: 1.67 V[0m
+[0;32mI (388364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (389364) LDR_LED: ADC Raw: 1535, Voltage: 1.40 V[0m
+[0;32mI (389364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (390364) LDR_LED: ADC Raw: 1381, Voltage: 1.28 V[0m
+[0;32mI (390364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (391364) LDR_LED: ADC Raw: 1117, Voltage: 1.06 V[0m
+[0;32mI (391364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (392364) LDR_LED: ADC Raw: 592, Voltage: 0.63 V[0m
+[0;32mI (392364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (393364) LDR_LED: ADC Raw: 1172, Voltage: 1.10 V[0m
+[0;32mI (393364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (394364) LDR_LED: ADC Raw: 1139, Voltage: 1.08 V[0m
+[0;32mI (394364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (395364) LDR_LED: ADC Raw: 1216, Voltage: 1.14 V[0m
+[0;32mI (395364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (396364) LDR_LED: ADC Raw: 1327, Voltage: 1.23 V[0m
+[0;32mI (396364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (397364) LDR_LED: ADC Raw: 1081, Voltage: 1.03 V[0m
+[0;32mI (397364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (398364) LDR_LED: ADC Raw: 1169, Voltage: 1.10 V[0m
+[0;32mI (398364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (399364) LDR_LED: ADC Raw: 2207, Voltage: 1.95 V[0m
+[0;32mI (399364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (400364) LDR_LED: ADC Raw: 2503, Voltage: 2.20 V[0m
+[0;32mI (400364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (401364) LDR_LED: ADC Raw: 2700, Voltage: 2.36 V[0m
+[0;32mI (401364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (402364) LDR_LED: ADC Raw: 2775, Voltage: 2.42 V[0m
+[0;32mI (402364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (403364) LDR_LED: ADC Raw: 2862, Voltage: 2.49 V[0m
+[0;32mI (403364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (404364) LDR_LED: ADC Raw: 2939, Voltage: 2.54 V[0m
+[0;32mI (404364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (405364) LDR_LED: ADC Raw: 2963, Voltage: 2.56 V[0m
+[0;32mI (405364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (406364) LDR_LED: ADC Raw: 3021, Voltage: 2.60 V[0m
+[0;32mI (406364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (407364) LDR_LED: ADC Raw: 2987, Voltage: 2.58 V[0m
+[0;32mI (407364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (408364) LDR_LED: ADC Raw: 3428, Voltage: 2.84 V[0m
+[0;32mI (408364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (409364) LDR_LED: ADC Raw: 3039, Voltage: 2.61 V[0m
+[0;32mI (409364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (410364) LDR_LED: ADC Raw: 3018, Voltage: 2.60 V[0m
+[0;32mI (410364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (411364) LDR_LED: ADC Raw: 2398, Voltage: 2.11 V[0m
+[0;32mI (411364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (412364) LDR_LED: ADC Raw: 1853, Voltage: 1.66 V[0m
+[0;32mI (412364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (413364) LDR_LED: ADC Raw: 1180, Voltage: 1.11 V[0m
+[0;32mI (413364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (414364) LDR_LED: ADC Raw: 925, Voltage: 0.90 V[0m
+[0;32mI (414364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (415364) LDR_LED: ADC Raw: 1393, Voltage: 1.29 V[0m
+[0;32mI (415364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (416364) LDR_LED: ADC Raw: 941, Voltage: 0.92 V[0m
+[0;32mI (416364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (417364) LDR_LED: ADC Raw: 829, Voltage: 0.82 V[0m
+[0;32mI (417364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (418364) LDR_LED: ADC Raw: 837, Voltage: 0.83 V[0m
+[0;32mI (418364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (419364) LDR_LED: ADC Raw: 819, Voltage: 0.81 V[0m
+[0;32mI (419364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (420364) LDR_LED: ADC Raw: 833, Voltage: 0.83 V[0m
+[0;32mI (420364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (421364) LDR_LED: ADC Raw: 832, Voltage: 0.82 V[0m
+[0;32mI (421364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (422364) LDR_LED: ADC Raw: 832, Voltage: 0.82 V[0m
+[0;32mI (422364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (423364) LDR_LED: ADC Raw: 831, Voltage: 0.82 V[0m
+[0;32mI (423364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (424364) LDR_LED: ADC Raw: 832, Voltage: 0.82 V[0m
+[0;32mI (424364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (425364) LDR_LED: ADC Raw: 831, Voltage: 0.82 V[0m
+[0;32mI (425364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (426364) LDR_LED: ADC Raw: 831, Voltage: 0.82 V[0m
+[0;32mI (426364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (427364) LDR_LED: ADC Raw: 829, Voltage: 0.82 V[0m
+[0;32mI (427364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (428364) LDR_LED: ADC Raw: 832, Voltage: 0.82 V[0m
+[0;32mI (428364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (429364) LDR_LED: ADC Raw: 832, Voltage: 0.82 V[0m
+[0;32mI (429364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (430364) LDR_LED: ADC Raw: 834, Voltage: 0.83 V[0m
+[0;32mI (430364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (431364) LDR_LED: ADC Raw: 833, Voltage: 0.83 V[0m
+[0;32mI (431364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (432364) LDR_LED: ADC Raw: 832, Voltage: 0.82 V[0m
+[0;32mI (432364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (433364) LDR_LED: ADC Raw: 832, Voltage: 0.82 V[0m
+[0;32mI (433364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (434364) LDR_LED: ADC Raw: 833, Voltage: 0.83 V[0m
+[0;32mI (434364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (435364) LDR_LED: ADC Raw: 833, Voltage: 0.83 V[0m
+[0;32mI (435364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (436364) LDR_LED: ADC Raw: 838, Voltage: 0.83 V[0m
+[0;32mI (436364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (437364) LDR_LED: ADC Raw: 842, Voltage: 0.83 V[0m
+[0;32mI (437364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (438364) LDR_LED: ADC Raw: 842, Voltage: 0.83 V[0m
+[0;32mI (438364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (439364) LDR_LED: ADC Raw: 847, Voltage: 0.84 V[0m
+[0;32mI (439364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (440364) LDR_LED: ADC Raw: 850, Voltage: 0.84 V[0m
+[0;32mI (440364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (441364) LDR_LED: ADC Raw: 867, Voltage: 0.85 V[0m
+[0;32mI (441364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (442364) LDR_LED: ADC Raw: 895, Voltage: 0.88 V[0m
+[0;32mI (442364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (443364) LDR_LED: ADC Raw: 1094, Voltage: 1.04 V[0m
+[0;32mI (443364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (444364) LDR_LED: ADC Raw: 2147, Voltage: 1.90 V[0m
+[0;32mI (444364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (445364) LDR_LED: ADC Raw: 1831, Voltage: 1.64 V[0m
+[0;32mI (445364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (446364) LDR_LED: ADC Raw: 2955, Voltage: 2.55 V[0m
+[0;32mI (446364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (447364) LDR_LED: ADC Raw: 2994, Voltage: 2.58 V[0m
+[0;32mI (447364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (448364) LDR_LED: ADC Raw: 3054, Voltage: 2.62 V[0m
+[0;32mI (448364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (449364) LDR_LED: ADC Raw: 3018, Voltage: 2.60 V[0m
+[0;32mI (449364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (450364) LDR_LED: ADC Raw: 3059, Voltage: 2.62 V[0m
+[0;32mI (450364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (451364) LDR_LED: ADC Raw: 2849, Voltage: 2.48 V[0m
+[0;32mI (451364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (452364) LDR_LED: ADC Raw: 1456, Voltage: 1.34 V[0m
+[0;32mI (452364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (453364) LDR_LED: ADC Raw: 1312, Voltage: 1.22 V[0m
+[0;32mI (453364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (454364) LDR_LED: ADC Raw: 3085, Voltage: 2.64 V[0m
+[0;32mI (454364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (455364) LDR_LED: ADC Raw: 2865, Voltage: 2.49 V[0m
+[0;32mI (455364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (456364) LDR_LED: ADC Raw: 3392, Voltage: 2.82 V[0m
+[0;32mI (456364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (457364) LDR_LED: ADC Raw: 3088, Voltage: 2.64 V[0m
+[0;32mI (457364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (458364) LDR_LED: ADC Raw: 3107, Voltage: 2.65 V[0m
+[0;32mI (458364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (459364) LDR_LED: ADC Raw: 2941, Voltage: 2.54 V[0m
+[0;32mI (459364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (460364) LDR_LED: ADC Raw: 3056, Voltage: 2.62 V[0m
+[0;32mI (460364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (461364) LDR_LED: ADC Raw: 3027, Voltage: 2.60 V[0m
+[0;32mI (461364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (462364) LDR_LED: ADC Raw: 2976, Voltage: 2.57 V[0m
+[0;32mI (462364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (463364) LDR_LED: ADC Raw: 2992, Voltage: 2.58 V[0m
+[0;32mI (463364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (464364) LDR_LED: ADC Raw: 1936, Voltage: 1.73 V[0m
+[0;32mI (464364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (465364) LDR_LED: ADC Raw: 1641, Voltage: 1.49 V[0m
+[0;32mI (465364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (466364) LDR_LED: ADC Raw: 1315, Voltage: 1.22 V[0m
+[0;32mI (466364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (467364) LDR_LED: ADC Raw: 1191, Voltage: 1.12 V[0m
+[0;32mI (467364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (468364) LDR_LED: ADC Raw: 1039, Voltage: 1.00 V[0m
+[0;32mI (468364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (469364) LDR_LED: ADC Raw: 909, Voltage: 0.89 V[0m
+[0;32mI (469364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (470364) LDR_LED: ADC Raw: 883, Voltage: 0.87 V[0m
+[0;32mI (470364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (471364) LDR_LED: ADC Raw: 873, Voltage: 0.86 V[0m
+[0;32mI (471364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (472364) LDR_LED: ADC Raw: 870, Voltage: 0.86 V[0m
+[0;32mI (472364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (473364) LDR_LED: ADC Raw: 865, Voltage: 0.85 V[0m
+[0;32mI (473364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (474364) LDR_LED: ADC Raw: 861, Voltage: 0.85 V[0m
+[0;32mI (474364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (475364) LDR_LED: ADC Raw: 879, Voltage: 0.86 V[0m
+[0;32mI (475364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (476364) LDR_LED: ADC Raw: 2473, Voltage: 2.17 V[0m
+[0;32mI (476364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (477364) LDR_LED: ADC Raw: 1158, Voltage: 1.09 V[0m
+[0;32mI (477364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (478364) LDR_LED: ADC Raw: 1767, Voltage: 1.59 V[0m
+[0;32mI (478364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (479364) LDR_LED: ADC Raw: 1861, Voltage: 1.67 V[0m
+[0;32mI (479364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (480364) LDR_LED: ADC Raw: 861, Voltage: 0.85 V[0m
+[0;32mI (480364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (481364) LDR_LED: ADC Raw: 854, Voltage: 0.84 V[0m
+[0;32mI (481364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (482364) LDR_LED: ADC Raw: 1264, Voltage: 1.18 V[0m
+[0;32mI (482364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (483364) LDR_LED: ADC Raw: 1203, Voltage: 1.13 V[0m
+[0;32mI (483364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (484364) LDR_LED: ADC Raw: 1214, Voltage: 1.14 V[0m
+[0;32mI (484364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (485364) LDR_LED: ADC Raw: 849, Voltage: 0.84 V[0m
+[0;32mI (485364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (486364) LDR_LED: ADC Raw: 1023, Voltage: 0.98 V[0m
+[0;32mI (486364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (487364) LDR_LED: ADC Raw: 957, Voltage: 0.93 V[0m
+[0;32mI (487364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (488364) LDR_LED: ADC Raw: 837, Voltage: 0.83 V[0m
+[0;32mI (488364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (489364) LDR_LED: ADC Raw: 1392, Voltage: 1.28 V[0m
+[0;32mI (489364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (490364) LDR_LED: ADC Raw: 833, Voltage: 0.83 V[0m
+[0;32mI (490364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (491364) LDR_LED: ADC Raw: 834, Voltage: 0.83 V[0m
+[0;32mI (491364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (492364) LDR_LED: ADC Raw: 832, Voltage: 0.82 V[0m
+[0;32mI (492364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (493364) LDR_LED: ADC Raw: 821, Voltage: 0.82 V[0m
+[0;32mI (493364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (494364) LDR_LED: ADC Raw: 821, Voltage: 0.82 V[0m
+[0;32mI (494364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (495364) LDR_LED: ADC Raw: 837, Voltage: 0.83 V[0m
+[0;32mI (495364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (496364) LDR_LED: ADC Raw: 833, Voltage: 0.83 V[0m
+[0;32mI (496364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (497364) LDR_LED: ADC Raw: 832, Voltage: 0.82 V[0m
+[0;32mI (497364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (498364) LDR_LED: ADC Raw: 819, Voltage: 0.81 V[0m
+[0;32mI (498364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (499364) LDR_LED: ADC Raw: 833, Voltage: 0.83 V[0m
+[0;32mI (499364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (500364) LDR_LED: ADC Raw: 827, Voltage: 0.82 V[0m
+[0;32mI (500364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (501364) LDR_LED: ADC Raw: 815, Voltage: 0.81 V[0m
+[0;32mI (501364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (502364) LDR_LED: ADC Raw: 826, Voltage: 0.82 V[0m
+[0;32mI (502364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (503364) LDR_LED: ADC Raw: 825, Voltage: 0.82 V[0m
+[0;32mI (503364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (504364) LDR_LED: ADC Raw: 816, Voltage: 0.81 V[0m
+[0;32mI (504364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (505364) LDR_LED: ADC Raw: 818, Voltage: 0.81 V[0m
+[0;32mI (505364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (506364) LDR_LED: ADC Raw: 817, Voltage: 0.81 V[0m
+[0;32mI (506364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (507364) LDR_LED: ADC Raw: 818, Voltage: 0.81 V[0m
+[0;32mI (507364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (508364) LDR_LED: ADC Raw: 818, Voltage: 0.81 V[0m
+[0;32mI (508364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (509364) LDR_LED: ADC Raw: 822, Voltage: 0.82 V[0m
+[0;32mI (509364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (510364) LDR_LED: ADC Raw: 820, Voltage: 0.81 V[0m
+[0;32mI (510364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (511364) LDR_LED: ADC Raw: 820, Voltage: 0.81 V[0m
+[0;32mI (511364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (512364) LDR_LED: ADC Raw: 816, Voltage: 0.81 V[0m
+[0;32mI (512364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (513364) LDR_LED: ADC Raw: 820, Voltage: 0.81 V[0m
+[0;32mI (513364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (514364) LDR_LED: ADC Raw: 818, Voltage: 0.81 V[0m
+[0;32mI (514364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (515364) LDR_LED: ADC Raw: 817, Voltage: 0.81 V[0m
+[0;32mI (515364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (516364) LDR_LED: ADC Raw: 816, Voltage: 0.81 V[0m
+[0;32mI (516364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (517364) LDR_LED: ADC Raw: 817, Voltage: 0.81 V[0m
+[0;32mI (517364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (518364) LDR_LED: ADC Raw: 818, Voltage: 0.81 V[0m
+[0;32mI (518364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (519364) LDR_LED: ADC Raw: 821, Voltage: 0.82 V[0m
+[0;32mI (519364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (520364) LDR_LED: ADC Raw: 813, Voltage: 0.81 V[0m
+[0;32mI (520364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (521364) LDR_LED: ADC Raw: 800, Voltage: 0.80 V[0m
+[0;32mI (521364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (522364) LDR_LED: ADC Raw: 802, Voltage: 0.80 V[0m
+[0;32mI (522364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (523364) LDR_LED: ADC Raw: 811, Voltage: 0.81 V[0m
+[0;32mI (523364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (524364) LDR_LED: ADC Raw: 803, Voltage: 0.80 V[0m
+[0;32mI (524364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (525364) LDR_LED: ADC Raw: 789, Voltage: 0.79 V[0m
+[0;32mI (525364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (526364) LDR_LED: ADC Raw: 779, Voltage: 0.78 V[0m
+[0;32mI (526364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (527364) LDR_LED: ADC Raw: 711, Voltage: 0.73 V[0m
+[0;32mI (527364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (528364) LDR_LED: ADC Raw: 720, Voltage: 0.73 V[0m
+[0;32mI (528364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (529364) LDR_LED: ADC Raw: 677, Voltage: 0.70 V[0m
+[0;32mI (529364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (530364) LDR_LED: ADC Raw: 670, Voltage: 0.69 V[0m
+[0;32mI (530364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (531364) LDR_LED: ADC Raw: 723, Voltage: 0.74 V[0m
+[0;32mI (531364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (532364) LDR_LED: ADC Raw: 810, Voltage: 0.81 V[0m
+[0;32mI (532364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (533364) LDR_LED: ADC Raw: 811, Voltage: 0.81 V[0m
+[0;32mI (533364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (534364) LDR_LED: ADC Raw: 802, Voltage: 0.80 V[0m
+[0;32mI (534364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (535364) LDR_LED: ADC Raw: 805, Voltage: 0.80 V[0m
+[0;32mI (535364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (536364) LDR_LED: ADC Raw: 826, Voltage: 0.82 V[0m
+[0;32mI (536364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (537364) LDR_LED: ADC Raw: 835, Voltage: 0.83 V[0m
+[0;32mI (537364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (538364) LDR_LED: ADC Raw: 719, Voltage: 0.73 V[0m
+[0;32mI (538364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (539364) LDR_LED: ADC Raw: 734, Voltage: 0.75 V[0m
+[0;32mI (539364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (540364) LDR_LED: ADC Raw: 2299, Voltage: 2.03 V[0m
+[0;32mI (540364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (541364) LDR_LED: ADC Raw: 2656, Voltage: 2.32 V[0m
+[0;32mI (541364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (542364) LDR_LED: ADC Raw: 2810, Voltage: 2.45 V[0m
+[0;32mI (542364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (543364) LDR_LED: ADC Raw: 2915, Voltage: 2.53 V[0m
+[0;32mI (543364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (544364) LDR_LED: ADC Raw: 2966, Voltage: 2.56 V[0m
+[0;32mI (544364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (545364) LDR_LED: ADC Raw: 3045, Voltage: 2.61 V[0m
+[0;32mI (545364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (546364) LDR_LED: ADC Raw: 2957, Voltage: 2.55 V[0m
+[0;32mI (546364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (547364) LDR_LED: ADC Raw: 2800, Voltage: 2.44 V[0m
+[0;32mI (547364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (548364) LDR_LED: ADC Raw: 1941, Voltage: 1.74 V[0m
+[0;32mI (548364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (549364) LDR_LED: ADC Raw: 1303, Voltage: 1.21 V[0m
+[0;32mI (549364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (550364) LDR_LED: ADC Raw: 1694, Voltage: 1.53 V[0m
+[0;32mI (550364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (551364) LDR_LED: ADC Raw: 983, Voltage: 0.95 V[0m
+[0;32mI (551364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (552364) LDR_LED: ADC Raw: 848, Voltage: 0.84 V[0m
+[0;32mI (552364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (553364) LDR_LED: ADC Raw: 841, Voltage: 0.83 V[0m
+[0;32mI (553364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (554364) LDR_LED: ADC Raw: 826, Voltage: 0.82 V[0m
+[0;32mI (554364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (555364) LDR_LED: ADC Raw: 827, Voltage: 0.82 V[0m
+[0;32mI (555364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (556364) LDR_LED: ADC Raw: 822, Voltage: 0.82 V[0m
+[0;32mI (556364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (557364) LDR_LED: ADC Raw: 816, Voltage: 0.81 V[0m
+[0;32mI (557364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (558364) LDR_LED: ADC Raw: 813, Voltage: 0.81 V[0m
+[0;32mI (558364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (559364) LDR_LED: ADC Raw: 567, Voltage: 0.61 V[0m
+[0;32mI (559364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (560364) LDR_LED: ADC Raw: 565, Voltage: 0.61 V[0m
+[0;32mI (560364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (561364) LDR_LED: ADC Raw: 572, Voltage: 0.61 V[0m
+[0;32mI (561364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (562364) LDR_LED: ADC Raw: 560, Voltage: 0.60 V[0m
+[0;32mI (562364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (563364) LDR_LED: ADC Raw: 578, Voltage: 0.62 V[0m
+[0;32mI (563364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (564364) LDR_LED: ADC Raw: 580, Voltage: 0.62 V[0m
+[0;32mI (564364) LDR_LED: LED ON (Dark detected!)[0m
+[0;32mI (565364) LDR_LED: ADC Raw: 1488, Voltage: 1.36 V[0m
+[0;32mI (565364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (566364) LDR_LED: ADC Raw: 2519, Voltage: 2.21 V[0m
+[0;32mI (566364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (567364) LDR_LED: ADC Raw: 2658, Voltage: 2.32 V[0m
+[0;32mI (567364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (568364) LDR_LED: ADC Raw: 2831, Voltage: 2.47 V[0m
+[0;32mI (568364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (569364) LDR_LED: ADC Raw: 2961, Voltage: 2.56 V[0m
+[0;32mI (569364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (570364) LDR_LED: ADC Raw: 3009, Voltage: 2.59 V[0m
+[0;32mI (570364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (571364) LDR_LED: ADC Raw: 3157, Voltage: 2.69 V[0m
+[0;32mI (571364) LDR_LED: LED OFF (Bright enough)[0m
+[0;32mI (572364) LDR_LED: ADC Raw: 2997, Voltage: 2.58 V[0m
+[0;32mI (572364) LDR_LED: LED OFF (Bright enough)[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x8 (TG1WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xffffffff
+invalid header: 0xfeffffff
+invalid header: 0x000000f0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000f0
+invalid header: 0x000000f0
+invalid header: 0x000000f0
+invalid header: 0x000000f0
+invalid header: 0x000000f0
+invalid header: 0x000000f0
+invalid header: 0x000000f0
+invalid header: 0x000000f0
+invalid header: 0x000000f0
+invalid header: 0x000000f0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+ets Jul 29 2019 12:21:46
+
+rst:0x7 (TG0WDT_SYS_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+invalid header: 0x000000e0
+invalid header: 0x000000e0
+invalid header: 0x000000f0
+invalid header: 0x000000f0
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7112
+load:0x40078000,len:15688
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (254) boot: ESP-IDF v5.1.6 2nd stage bootloader[0m
+[0;32mI (254) boot: compile time Oct  4 2025 00:41:41[0m
+[0;32mI (254) boot: Multicore bootloader[0m
+[0;32mI (260) boot: chip revision: v3.1[0m
+[0;32mI (263) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (268) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (273) boot.esp32: SPI Flash Size : 2MB[0m
+[0;33mW (277) boot.esp32: PRO CPU has been reset by WDT.[0m
+[0;33mW (283) boot.esp32: WDT reset info: PRO CPU PC=0x400881f0[0m
+[0;33mW (289) boot.esp32: WDT reset info: APP CPU PC=0x400881f0[0m
+[0;32mI (295) boot: Enabling RNG early entropy source...[0m
+[0;32mI (301) boot: Partition Table:[0m
+[0;32mI (304) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (312) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (319) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (327) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (334) boot: End of partition table[0m
+[0;32mI (339) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2f4h ( 41716) map[0m
+[0;32mI (362) esp_image: segment 1: paddr=0001a31c vaddr=3ffb0000 size=02170h (  8560) load[0m
+[0;32mI (366) esp_image: segment 2: paddr=0001c494 vaddr=40080000 size=03b84h ( 15236) load[0m
+[0;32mI (374) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15d40h ( 89408) map[0m
+[0;32mI (409) esp_image: segment 4: paddr=00035d68 vaddr=40083b84 size=08420h ( 33824) load[0m
+[0;32mI (429) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (429) boot: Disabling RNG early entropy source...[0m
+[0;32mI (441) cpu_start: Multicore app[0m
+[0;32mI (442) cpu_start: Pro cpu up.[0m
+[0;32mI (442) cpu_start: Starting app cpu, entry point is 0x40081110[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (459) cpu_start: Pro cpu start user code[0m
+[0;32mI (459) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (459) cpu_start: Application information:[0m
+[0;32mI (464) cpu_start: Project name:     led[0m
+[0;32mI (468) cpu_start: App version:      ef991a2-dirty[0m
+[0;32mI (474) cpu_start: Compile time:     Oct  4 2025 00:40:43[0m
+[0;32mI (480) cpu_start: ELF file SHA256:  70bfc82032882f9a...[0m
+[0;32mI (486) cpu_start: ESP-IDF:          v5.1.6[0m
+[0;32mI (491) cpu_start: Min chip rev:   
